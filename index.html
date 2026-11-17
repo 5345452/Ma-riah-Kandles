@@ -1,0 +1,663 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ma'riah Kandles | Luxury Flowers & Gifts</title>
+
+    <meta name="description" content="Discover beautiful wrapped flower bouquets, money bouquets, gift hampers and personalized gifts at Ma'riah Kandles.">
+
+    <meta name="theme-color" content="#100d0e">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="site-header">
+    <div class="container navbar">
+
+        <a href="#home" class="brand">
+            <span class="brand-mark">❀</span>
+
+            <span class="brand-text">
+                <span class="brand-name">Ma'riah Kandles</span>
+                <span class="brand-subtitle">FLOWERS · GIFTS · MORE</span>
+            </span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#shop">Collections</a>
+            <a href="#custom">Custom Gifts</a>
+            <a href="#about">Our Story</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="nav-cta" onclick="openGeneralWhatsApp()">
+            Let's Talk ↗
+        </button>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false">
+            ☰
+        </button>
+
+    </div>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <p class="script">A little something beautiful</p>
+
+            <p class="eyebrow">THOUGHTFUL GIFTS · BEAUTIFULLY MADE</p>
+
+            <h1>
+                Flowers that<br>
+                <span>speak the heart.</span>
+            </h1>
+
+            <p class="hero-description">
+                From dreamy rose bouquets to beautiful money bouquets
+                and personalized gift hampers, we turn your feelings
+                into something they can hold.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#shop" class="btn btn-pink">
+                    Discover Our Bouquets ↗
+                </a>
+
+                <button
+                    class="btn btn-outline"
+                    onclick="openGeneralWhatsApp()">
+                    Chat With Us
+                </button>
+
+            </div>
+
+            <div class="hero-note">
+                ♡ Every bouquet tells a story. Let yours begin here.
+            </div>
+
+        </div>
+
+        <div class="hero-side-note">
+            <span class="hero-side-line"></span>
+            MADE WITH LOVE, ALWAYS
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES STRIP -->
+<section class="services">
+    <div class="container service-grid">
+
+        <article class="service">
+            <span class="service-icon">✿</span>
+            <div>
+                <h3>Flower Bouquets</h3>
+                <p>Beautifully wrapped blooms</p>
+            </div>
+        </article>
+
+        <article class="service">
+            <span class="service-icon">♡</span>
+            <div>
+                <h3>Money Bouquets</h3>
+                <p>Cash gifts with a twist</p>
+            </div>
+        </article>
+
+        <article class="service">
+            <span class="service-icon">♧</span>
+            <div>
+                <h3>Gift Hampers</h3>
+                <p>Little luxuries, together</p>
+            </div>
+        </article>
+
+        <article class="service">
+            <span class="service-icon">✧</span>
+            <div>
+                <h3>Made for You</h3>
+                <p>Your vision, your budget</p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+<!-- BOUQUET COLLECTION -->
+<section class="products-section" id="shop">
+    <div class="section-heading">
+        <span class="section-tag">MA'RIAH'S COLLECTION</span>
+        <h2>Flowers That <em>Speak</em></h2>
+        <p>Find your favourite bouquet or enquire about a custom creation.</p>
+    </div>
+
+    <div class="product-grid" id="bouquetGrid">
+
+        <!-- BOUQUET 01 -->
+        <div class="product-card">
+            <div class="product-image">
+               <img src="images/bouquet-01.jpg" alt="Blush Romance bouquet">
+                <span class="product-tag">BOUQUET 01</span>
+            </div>
+            <div class="product-info">
+                <h3>Blush Romance</h3>
+                <div class="product-bottom">
+                    <span class="price">Price on Request</span>
+                    <button class="order-btn" onclick="orderProduct('Blush Romance — Bouquet 01')">Enquire</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOUQUET 02 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images/bouquet-02.jpg" alt="Crimson Love bouquet">
+                <span class="product-tag">BOUQUET 02</span>
+            </div>
+            <div class="product-info">
+                <h3>Crimson Love</h3>
+                <div class="product-bottom">
+                    <span class="price">Price on Request</span>
+                    <button class="order-btn" onclick="orderProduct('Crimson Love — Bouquet 02')">Enquire</button>
+                </div>
+            </div>
+        </div>
+
+       <!-- BOUQUET 03 -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="images/bouquet-03.jpg" alt="Ivory Grace bouquet">
+        <span class="product-tag">BOUQUET 03</span>
+    </div>
+    <div class="product-info">
+        <h3>Ivory Grace</h3>
+        <div class="product-bottom">
+            <span class="price">Price on Request</span>
+            <button class="order-btn" onclick="orderProduct('Ivory Grace — Bouquet 03')">Enquire</button>
+        </div>
+    </div>
+</div>
+
+        <!-- BOUQUET 04 -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="images/bouquet-04.jpg" alt="Golden Bloom bouquet">
+        <span class="product-tag">BOUQUET 04</span>
+    </div>
+    <div class="product-info">
+        <h3>Golden Bloom</h3>
+        <div class="product-bottom">
+            <span class="price">Price on Request</span>
+            <button class="order-btn" onclick="orderProduct('Golden Bloom — Bouquet 04')">Enquire</button>
+        </div>
+    </div>
+</div>
+       <!-- BOUQUET 05 -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="images/bouquet-05.jpg" alt="Lavender Dream bouquet">
+        <span class="product-tag">BOUQUET 05</span>
+    </div>
+    <div class="product-info">
+        <h3>Lavender Dream</h3>
+        <div class="product-bottom">
+            <span class="price">Price on Request</span>
+            <button class="order-btn" onclick="orderProduct('Lavender Dream — Bouquet 05')">Enquire</button>
+        </div>
+    </div>
+</div>
+
+       <!-- BOUQUET 06 -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="images/bouquet-06.jpg" alt="Petal Kiss bouquet">
+        <span class="product-tag">BOUQUET 06</span>
+    </div>
+    <div class="product-info">
+        <h3>Petal Kiss</h3>
+        <div class="product-bottom">
+            <span class="price">Price on Request</span>
+            <button class="order-btn" onclick="orderProduct('Petal Kiss — Bouquet 06')">Enquire</button>
+        </div>
+    </div>
+</div>
+
+        <!-- BOUQUET 07 -->
+<div class="product-card extra-bouquet" hidden>
+    <div class="product-image">
+        <img src="images/bouquet-07.jpg" alt="Rosy Glow bouquet">
+        <span class="product-tag">BOUQUET 07</span>
+    </div>
+    <div class="product-info">
+        <h3>Rosy Glow</h3>
+        <div class="product-bottom">
+            <span class="price">Price on Request</span>
+            <button class="order-btn" onclick="orderProduct('Rosy Glow — Bouquet 07')">Enquire</button>
+        </div>
+    </div>
+</div>
+
+        <!-- BOUQUET 08 -->
+<div class="product-card extra-bouquet" hidden>
+    <div class="product-image">
+        <img src="images/bouquet-08.jpg" alt="Sweet Peony bouquet">
+        <span class="product-tag">BOUQUET 08</span>
+    </div>
+    <div class="product-info">
+        <h3>Sweet Peony</h3>
+        <div class="product-bottom">
+            <span class="price">Price on Request</span>
+            <button class="order-btn" onclick="orderProduct('Sweet Peony — Bouquet 08')">Enquire</button>
+        </div>
+    </div>
+</div>
+        <!-- BOUQUET 09 -->
+<div class="product-card extra-bouquet" hidden>
+    <div class="product-image">
+        <img src="images/bouquet-09.jpg" alt="Midnight Bloom bouquet">
+        <span class="product-tag">BOUQUET 09</span>
+    </div>
+    <div class="product-info">
+        <h3>Midnight Bloom</h3>
+        <div class="product-bottom">
+            <span class="price">Price on Request</span>
+            <button class="order-btn" onclick="orderProduct('Midnight Bloom — Bouquet 09')">Enquire</button>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <div class="collection-footer">
+        <p>Looking for something unique? Let us create a bouquet or gift made just for you.</p>
+        <button class="btn btn-outline" id="viewMoreBouquets" onclick="toggleMoreBouquets()" aria-expanded="false">
+            View More Bouquets ↓
+        </button>
+        <div class="collection-custom-cta">
+            <button class="btn btn-primary" onclick="customOrder()">Create a Custom Bouquet</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- CUSTOM GIFTS -->
+<section class="section custom-section" id="custom">
+
+    <div class="container custom-grid">
+
+        <div class="custom-visual">
+
+            <img
+                src="images/bouquet-09.jpg"
+                loading="lazy">
+
+            <div class="custom-caption">
+                <span class="script">Made just for them</span>
+                <p>No two love stories are the same.</p>
+            </div>
+
+        </div>
+
+        <div class="custom-content">
+
+            <p class="eyebrow">YOUR IDEA, OUR MAGIC</p>
+
+            <h2 class="section-title">
+                Your gift.<br>
+                <span>Your way.</span>
+            </h2>
+
+            <p class="custom-description">
+                Tell us what you have imagined. From the flowers and
+                wrapping to the cash amount, extra gifts and budget,
+                we will work with you to create something personal.
+            </p>
+
+            <div class="custom-features">
+
+                <div class="custom-feature">
+                    <span>01</span>
+                    <div>
+                        <h4>Choose Your Blooms</h4>
+                        <p>Roses, mixed flowers and more.</p>
+                    </div>
+                </div>
+
+                <div class="custom-feature">
+                    <span>02</span>
+                    <div>
+                        <h4>Pick Your Colours</h4>
+                        <p>Choose your favourite palette.</p>
+                    </div>
+                </div>
+
+                <div class="custom-feature">
+                    <span>03</span>
+                    <div>
+                        <h4>Add Your Cash</h4>
+                        <p>Personalize a money bouquet.</p>
+                    </div>
+                </div>
+
+                <div class="custom-feature">
+                    <span>04</span>
+                    <div>
+                        <h4>Add Extra Gifts</h4>
+                        <p>Chocolates, teddy bears and more.</p>
+                    </div>
+                </div>
+
+                <div class="custom-feature">
+                    <span>05</span>
+                    <div>
+                        <h4>Choose the Wrapping</h4>
+                        <p>Make the presentation yours.</p>
+                    </div>
+                </div>
+
+                <div class="custom-feature">
+                    <span>06</span>
+                    <div>
+                        <h4>Set Your Budget</h4>
+                        <p>Discuss your preferences with us.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="btn btn-pink"
+                onclick="customOrder()">
+                Let's Design Your Gift ↗
+            </button>
+
+            <p class="small-note">
+                No online checkout. Every order is discussed personally
+                and confirmed through WhatsApp.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- OCCASIONS -->
+<section class="section occasions-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">FOR EVERY KIND OF LOVE</p>
+
+            <h2 class="section-title">
+                A reason to <span>celebrate.</span>
+            </h2>
+
+            <p class="section-intro">
+                Because the best moments deserve a little something extra.
+            </p>
+        </div>
+
+        <div class="occasion-grid">
+
+            <button class="occasion-card"
+                onclick="orderOccasion('Birthday')">
+                <span>✧</span>
+                <h3>Birthdays</h3>
+                <p>Make their day unforgettable.</p>
+                <span class="occasion-link">Find a gift ↗</span>
+            </button>
+
+            <button class="occasion-card"
+                onclick="orderOccasion('Graduation')">
+                <span>❀</span>
+                <h3>Graduations</h3>
+                <p>Celebrate every hard-earned win.</p>
+                <span class="occasion-link">Find a gift ↗</span>
+            </button>
+
+            <button class="occasion-card"
+                onclick="orderOccasion('Anniversary')">
+                <span>♡</span>
+                <h3>Anniversaries</h3>
+                <p>Give love a beautiful expression.</p>
+                <span class="occasion-link">Find a gift ↗</span>
+            </button>
+
+            <button class="occasion-card"
+                onclick="orderOccasion('Just Because')">
+                <span>✿</span>
+                <h3>Just Because</h3>
+                <p>No occasion needed to make them smile.</p>
+                <span class="occasion-link">Find a gift ↗</span>
+            </button>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- HOW TO ORDER -->
+<section class="section how-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">SIMPLE & PERSONAL</p>
+            <h2 class="section-title">Three little steps.</h2>
+            <p class="section-intro">
+                Your perfect gift is only a conversation away.
+            </p>
+        </div>
+
+        <div class="steps-grid">
+
+            <article class="step">
+                <span class="step-number">01</span>
+                <h3>Find Your Favourite</h3>
+                <p>
+                    Browse the collection or bring your own creative idea.
+                </p>
+            </article>
+
+            <article class="step">
+                <span class="step-number">02</span>
+                <h3>Let's Talk</h3>
+                <p>
+                    Message us on WhatsApp to discuss your budget,
+                    preferences and the date you need your gift.
+                </p>
+            </article>
+
+            <article class="step">
+                <span class="step-number">03</span>
+                <h3>Make Them Smile</h3>
+                <p>
+                    Confirm the arrangement and agree on delivery
+                    or collection details with us.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about-section" id="about">
+
+    <div class="container about-content">
+
+        <p class="script">A little love in every detail</p>
+
+        <p class="eyebrow">THE HEART BEHIND THE FLOWERS</p>
+
+        <h2 class="section-title">
+            It's never just<br>
+            <span>a bouquet.</span>
+        </h2>
+
+        <p>
+            It is the birthday you never want them to forget.
+            The graduation they worked so hard for. The apology,
+            the surprise, the thank-you or the little reminder
+            that someone is thinking of them.
+        </p>
+
+        <p>
+            At Ma'riah Kandles, we believe gifts should feel personal.
+            That is why we want to hear your ideas, understand your
+            budget and help you create something meaningful.
+        </p>
+
+        <button class="btn btn-pink"
+            onclick="customOrder()">
+            Tell Us Your Idea ♡
+        </button>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+
+    <div class="contact-overlay"></div>
+
+    <div class="container contact-content">
+
+        <p class="script">Something beautiful starts here</p>
+
+        <h2 class="section-title">
+            Someone deserves<br>
+            <span>a little magic.</span>
+        </h2>
+
+        <p>
+            Tell us who you are celebrating, what you have in mind
+            and the budget you would like to work with.
+            Let's create a gift they will remember.
+        </p>
+
+        <button class="btn btn-pink"
+            onclick="openGeneralWhatsApp()">
+            Let's Create Something Beautiful ↗
+        </button>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand-column">
+
+                <a href="#home" class="brand">
+                    <span class="brand-mark">❀</span>
+
+                    <span class="brand-text">
+                        <span class="brand-name">Ma'riah Kandles</span>
+                        <span class="brand-subtitle">FLOWERS · GIFTS · MORE</span>
+                    </span>
+                </a>
+
+                <p>
+                    Thoughtful bouquets, personalized gifts and
+                    little moments made beautiful.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+                <h4>EXPLORE</h4>
+                <a href="#home">Home</a>
+                <a href="#shop">Collections</a>
+                <a href="#custom">Custom Gifts</a>
+                <a href="#about">Our Story</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>OCCASIONS</h4>
+                <a href="#shop">Birthdays</a>
+                <a href="#shop">Graduations</a>
+                <a href="#shop">Anniversaries</a>
+                <a href="#shop">Just Because</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>LET'S CONNECT</h4>
+                <p>Have a special request?</p>
+
+                <button onclick="openGeneralWhatsApp()">
+                    WhatsApp Us ↗
+                </button>
+
+                <a href="#custom">Design a Custom Gift</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © <span id="year"></span> Ma'riah Kandles.
+                All rights reserved.
+            </p>
+
+            <p>Made with ♡ for life's beautiful moments.</p>
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<button
+    class="float-whatsapp"
+    onclick="openGeneralWhatsApp()"
+    aria-label="Chat with Ma'riah Kandles on WhatsApp">
+
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 3.2A12.7 12.7 0 0 0 5.1 22.4L3.4 28.7l6.5-1.7A12.8 12.8 0 1 0 16 3.2Zm0 23.1c-2 0-4-.5-5.7-1.6l-.4-.2-3.8 1 1-3.7-.2-.4A10.2 10.2 0 1 1 16 26.3Zm5.6-7.7c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2s-.8 1-1 1.2-.4.2-.7.1a8.4 8.4 0 0 1-2.6-1.6 9.4 9.4 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.4.4-.6.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.1 3.1 1.3 3.3c.2.2 2.2 3.4 5.3 4.7.8.4 1.4.6 1.9.7.8.3 1.5.2 2 .1.6-.1 1.9-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4Z"/>
+    </svg>
+
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
